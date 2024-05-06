@@ -71,8 +71,14 @@
         
         public override string ToString()
         {
-            string ageInfo = (Age < 10) ? "I am just a kid!" : $"I am {Age} years old.";
-            return $"Hi, my name is {FirstName} {LastName}. I am {Age} years old. I am {Gender}.";
+            if (Age < 10) 
+            {
+                return "I am a baby.";
+            }
+            else 
+            {
+                return $"Hi, my name is {FirstName} {LastName}. I am {Age} years old. I am {Gender}.";
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using UserApp;
 
 var inputController = new InputController();
-var user1 = new User(5);
+var user1 = new User(10);
 
 //Input  user's data
 user1.InputUserName(inputController);
