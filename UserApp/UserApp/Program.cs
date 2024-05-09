@@ -7,4 +7,5 @@ var user1 = new User(10);
 user1.InputUserName(inputController);
 user1.InputUserGender();
 //Output  user's data
+Console.WriteLine();
 Console.WriteLine(user1);
