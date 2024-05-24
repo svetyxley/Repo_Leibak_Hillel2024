@@ -6,6 +6,10 @@ namespace UserApp
     {
         public bool IsValidName(string name)
         {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return false;
+            }
             // regular expression that checks whether the entered name contains only letters and allowed characters
             string pattern = @"^[A-Za-z]*$";
 
